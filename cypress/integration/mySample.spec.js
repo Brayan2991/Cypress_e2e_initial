@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-beforeEach('', () =>{
+beforeEach(() =>{
   cy.visit("https://www.saucedemo.com/");
 })
 describe('My First Test', () => {
