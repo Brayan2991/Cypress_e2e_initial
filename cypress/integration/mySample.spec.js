@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 
-beforeEach(function(){
-  cy.visit("https://www.saucedemo.com/");
-})
 describe('My First Test', () => {
+  beforeEach(function(){
+    cy.visit("https://www.saucedemo.com/");
+  });
     it('Assert Login Title', () => {
       cy.title().should('eq', 'Swag Labs');
     }),
@@ -29,7 +29,7 @@ describe('My First Test', () => {
       cy.get('.complete-header').contains('THANK YOU FOR YOUR ORDER');
       cy.get('#react-burger-menu-btn').click();
       cy.get('#logout_sidebar_link').click();
-
-    })
+    });
   }) 
+  
   
